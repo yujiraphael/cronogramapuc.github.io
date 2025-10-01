@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Ataque Final - PUC-Rio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .task-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+        .task-card:hover {
+            transform: translateY(-5px);
+            background-color: #1e293b; /* slate-800 */
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+        }
+        .day-header {
+            border-bottom: 2px solid;
+        }
+        .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-50">Plano de Ataque Final</h1>
+            <p class="mt-2 text-lg text-slate-400">Rumo à Aprovação no Grupo 1 da PUC-Rio</p>
+        </header>
+
+        <!-- Legenda -->
+        <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-6 mb-12 text-sm text-slate-300">
+            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-blue-500 mr-2"></span>Estudo Intenso</div>
+            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-yellow-500 mr-2"></span>Diagnóstico / Simulado</div>
+            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-green-500 mr-2"></span>Revisão / Ajuste</div>
+            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-indigo-500 mr-2"></span>Preparo Mental</div>
+            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-slate-500 mr-2"></span>Descanso Total</div>
+            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-red-500 mr-2"></span>Dia da Prova</div>
+        </div>
+        
+        <!-- Fase 1 -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-slate-100 border-l-4 border-blue-500 pl-4">Fase 1: Preparação para o Dia 1 <span class="text-lg font-normal text-slate-400">(01/10 a 12/10)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Quarta, 01/10 -->
+                <div class="task-card bg-slate-800/50 border border-yellow-500/50 rounded-lg p-5">
+                    <div class="day-header border-yellow-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">01/10 - Quarta</h3>
+                        <p class="text-sm text-yellow-400 font-semibold">DIA DE DIAGNÓSTICO</p>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Manhã:</b> Refazer discursiva de Matemática 2024.</div></li>
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg><div><b class="text-slate-200">Tarde:</b> Refazer discursiva de Português 2024.</div></li>
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg><div><b class="text-slate-200">Noite:</b> Análise de erros e lista de micro-tópicos.</div></li>
+                    </ul>
+                </div>
+                
+                <!-- Quinta, 02/10 -->
+                <div class="task-card bg-slate-800/50 border border-blue-500/50 rounded-lg p-5">
+                    <div class="day-header border-blue-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">02/10 - Quinta</h3>
+                        <p class="text-sm text-blue-400 font-semibold">ATAQUE DIRECIONADO</p>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12A2.25 2.25 0 0020.25 14.25V3M3.75 21h16.5M16.5 3.75h.008v.008H16.5V3.75z" /></svg><div><b class="text-slate-200">Manhã:</b> Ataque aos micro-tópicos de Matemática.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg><div><b class="text-slate-200">Tarde:</b> Prática de Redação (Tema 2025).</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Noite:</b> Revisão de Física (Mecânica).</div></li>
+                    </ul>
+                </div>
+
+                <!-- Sexta, 03/10 -->
+                <div class="task-card bg-slate-800/50 border border-blue-500/50 rounded-lg p-5">
+                    <div class="day-header border-blue-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">03/10 - Sexta</h3>
+                        <p class="text-sm text-blue-400 font-semibold">FOCO EM NATUREZA E LINGUAGENS</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Manhã:</b> Exercícios de Química.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg><div><b class="text-slate-200">Tarde:</b> Refazer discursiva de Português 2023.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C13.18 7.061 14.12 7.5 15 7.5c.879 0 1.819-.439 2.666-1.136" /></svg><div><b class="text-slate-200">Noite:</b> Leitura em Inglês + Prova 2025.</div></li>
+                    </ul>
+                </div>
+
+                <!-- Sábado, 04/10 -->
+                <div class="task-card bg-slate-800/50 border border-yellow-500/50 rounded-lg p-5">
+                    <div class="day-header border-yellow-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">04/10 - Sábado</h3>
+                        <p class="text-sm text-yellow-400 font-semibold">SIMULADO FINAL - DIA 1</p>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Manhã:</b> Revisão leve (Literatura, Redação).</div></li>
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Tarde (14h-18h):</b> SIMULADO COMPLETO.</div></li>
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg><div><b class="text-slate-200">Noite:</b> Correção e análise do simulado.</div></li>
+                    </ul>
+                </div>
+                
+                <!-- Domingo, 05/10 -->
+                <div class="task-card bg-slate-800/50 border border-yellow-500/50 rounded-lg p-5">
+                    <div class="day-header border-yellow-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">05/10 - Domingo</h3>
+                        <p class="text-sm text-yellow-400 font-semibold">SIMULADO FINAL - DIA 2</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Manhã:</b> Revisão leve (Fórmulas).</div></li>
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Tarde (14h-18h):</b> SIMULADO COMPLETO.</div></li>
+                        <li class="flex items-start"><svg class="icon text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg><div><b class="text-slate-200">Noite:</b> Correção e análise focada.</div></li>
+                    </ul>
+                </div>
+                
+                <!-- Segunda, 06/10 -->
+                 <div class="task-card bg-slate-800/50 border border-green-500/50 rounded-lg p-5">
+                    <div class="day-header border-green-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">06/10 - Segunda</h3>
+                        <p class="text-sm text-green-400 font-semibold">AJUSTE DE ROTA</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Manhã:</b> Revisão intensiva erros de Matemática.</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg><div><b class="text-slate-200">Tarde:</b> Revisão erros de Português.</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Noite:</b> Revisão de Física (Eletrodinâmica).</div></li>
+                    </ul>
+                </div>
+
+                <!-- Terça, 07/10 -->
+                 <div class="task-card bg-slate-800/50 border border-blue-500/50 rounded-lg p-5">
+                    <div class="day-header border-blue-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">07/10 - Terça</h3>
+                        <p class="text-sm text-blue-400 font-semibold">ATAQUE AOS PILARES</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12A2.25 2.25 0 0020.25 14.25V3M3.75 21h16.5M16.5 3.75h.008v.008H16.5V3.75z" /></svg><div><b class="text-slate-200">Manhã:</b> Bateria de exercícios (Matemática).</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Tarde:</b> Revisão estratégica de Humanas.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Noite:</b> Revisão Química Orgânica.</div></li>
+                    </ul>
+                </div>
+
+                <!-- Quarta, 08/10 -->
+                 <div class="task-card bg-slate-800/50 border border-blue-500/50 rounded-lg p-5">
+                    <div class="day-header border-blue-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">08/10 - Quarta</h3>
+                        <p class="text-sm text-blue-400 font-semibold">LAPIDAÇÃO FINAL</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg><div><b class="text-slate-200">Manhã:</b> Refazer discursiva Matemática 2025.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg><div><b class="text-slate-200">Tarde:</b> Refazer discursiva Português 2025.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Noite:</b> Revisão de Biologia (Genética).</div></li>
+                    </ul>
+                </div>
+                
+                <!-- Quinta, 09/10 -->
+                 <div class="task-card bg-slate-800/50 border border-green-500/50 rounded-lg p-5">
+                    <div class="day-header border-green-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">09/10 - Quinta</h3>
+                        <p class="text-sm text-green-400 font-semibold">REVISÃO GERAL</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Manhã:</b> Revisão checklists Natureza.</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Tarde:</b> Revisão checklists Humanas/Linguagens.</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg><div><b class="text-slate-200">Noite:</b> Descanso.</div></li>
+                    </ul>
+                </div>
+
+                <!-- Sexta, 10/10 -->
+                 <div class="task-card bg-slate-800/50 border border-indigo-500/50 rounded-lg p-5">
+                    <div class="day-header border-indigo-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">10/10 - Sexta</h3>
+                        <p class="text-sm text-indigo-400 font-semibold">PREPARAÇÃO MENTAL</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Manhã:</b> Leitura leve de resoluções.</div></li>
+                        <li class="flex items-start"><svg class="icon text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg><div><b class="text-slate-200">Tarde:</b> Descanso e organização de material.</div></li>
+                        <li class="flex items-start"><svg class="icon text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg><div><b class="text-slate-200">Noite:</b> Desligar de tudo, dormir cedo.</div></li>
+                    </ul>
+                </div>
+                
+                <!-- Sábado, 11/10 -->
+                 <div class="task-card bg-slate-800/50 border border-slate-500/50 rounded-lg p-5">
+                    <div class="day-header border-slate-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">11/10 - Sábado</h3>
+                        <p class="text-sm text-slate-400 font-semibold">DESCANSO TOTAL</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center h-full text-center text-slate-400">
+                        <svg class="h-16 w-16 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                        <p class="font-semibold text-slate-300">Confie na sua preparação. <br>Relaxe a mente.</p>
+                    </div>
+                </div>
+                
+                <!-- Domingo, 12/10 -->
+                <div class="task-card bg-red-500/20 border border-red-500/50 rounded-lg p-5 flex items-center justify-center text-center shadow-lg shadow-red-500/10">
+                    <div>
+                        <h3 class="text-2xl font-bold text-red-300">12/10 - Domingo</h3>
+                        <p class="text-xl font-semibold text-red-400 mt-2">DIA DA PROVA 1</p>
+                         <svg class="h-16 w-16 mx-auto mt-4 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 00-1.071 1.072L12.722 4.2l-1.06-1.061a.75.75 0 00-1.06 1.061l1.06 1.06-1.06 1.06a.75.75 0 101.06 1.06l1.06-1.06 1.06 1.06a.75.75 0 101.06-1.06l-1.06-1.06 1.06-1.06a.75.75 0 00-1.06-1.061l-1.06 1.06-1.83-1.831zM16.5 5.25a.75.75 0 000 1.5h3.375a.75.75 0 000-1.5H16.5z" clip-rule="evenodd" />
+                            <path d="M6.75 7.5A.75.75 0 006 8.25v9a.75.75 0 00.75.75h9a.75.75 0 00.75-.75v-9A.75.75 0 0015.75 7.5h-9z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fase 2 -->
+        <div>
+            <h2 class="text-3xl font-bold mb-6 text-slate-100 border-l-4 border-blue-500 pl-4">Fase 2: Sprint Final para o Dia 2 <span class="text-lg font-normal text-slate-400">(13/10 a 19/10)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Segunda, 13/10 -->
+                <div class="task-card bg-slate-800/50 border border-green-500/50 rounded-lg p-5">
+                    <div class="day-header border-green-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">13/10 - Segunda</h3>
+                        <p class="text-sm text-green-400 font-semibold">REAQUECIMENTO</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg><div><b class="text-slate-200">Manhã:</b> Descanso.</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Tarde:</b> Revisão de Física (Mecânica e Eletro).</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Noite:</b> Revisão de Humanas.</div></li>
+                    </ul>
+                </div>
+                <!-- Terça, 14/10 -->
+                <div class="task-card bg-slate-800/50 border border-blue-500/50 rounded-lg p-5">
+                    <div class="day-header border-blue-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">14/10 - Terça</h3>
+                        <p class="text-sm text-blue-400 font-semibold">IMERSÃO EM MATEMÁTICA</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12A2.25 2.25 0 0020.25 14.25V3M3.75 21h16.5M16.5 3.75h.008v.008H16.5V3.75z" /></svg><div><b class="text-slate-200">Manhã:</b> Refazer TODAS discursivas de Matemática.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Tarde:</b> Bateria de exercícios (Química e Bio).</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg><div><b class="text-slate-200">Noite:</b> Descanso.</div></li>
+                    </ul>
+                </div>
+                <!-- Quarta, 15/10 -->
+                <div class="task-card bg-slate-800/50 border border-blue-500/50 rounded-lg p-5">
+                    <div class="day-header border-blue-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">15/10 - Quarta</h3>
+                        <p class="text-sm text-blue-400 font-semibold">FOCO EM NATUREZA</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Manhã:</b> Prova completa de Natureza 2025.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Tarde:</b> Prova completa de Natureza 2024.</div></li>
+                        <li class="flex items-start"><svg class="icon text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Noite:</b> Revisão leve de Matemática.</div></li>
+                    </ul>
+                </div>
+                <!-- Quinta, 16/10 -->
+                <div class="task-card bg-slate-800/50 border border-green-500/50 rounded-lg p-5">
+                    <div class="day-header border-green-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">16/10 - Quinta</h3>
+                        <p class="text-sm text-green-400 font-semibold">REVISÃO FINAL</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Manhã:</b> Revisão checklists de Natureza.</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Tarde:</b> Revisão final de Humanas.</div></li>
+                        <li class="flex items-start"><svg class="icon text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><div><b class="text-slate-200">Noite:</b> Última olhada em Matemática.</div></li>
+                    </ul>
+                </div>
+                <!-- Sexta, 17/10 -->
+                <div class="task-card bg-slate-800/50 border border-indigo-500/50 rounded-lg p-5">
+                    <div class="day-header border-indigo-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">17/10 - Sexta</h3>
+                        <p class="text-sm text-indigo-400 font-semibold">PREPARAÇÃO MENTAL</p>
+                    </div>
+                     <ul class="space-y-3">
+                        <li class="flex items-start"><svg class="icon text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg><div><b class="text-slate-200">Manhã:</b> Leitura levíssima de resumos.</div></li>
+                        <li class="flex items-start"><svg class="icon text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg><div><b class="text-slate-200">Tarde:</b> Descanso e organização.</div></li>
+                        <li class="flex items-start"><svg class="icon text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg><div><b class="text-slate-200">Noite:</b> Desligar de tudo, dormir bem.</div></li>
+                    </ul>
+                </div>
+                 <!-- Sábado, 18/10 -->
+                <div class="task-card bg-slate-800/50 border border-slate-500/50 rounded-lg p-5">
+                    <div class="day-header border-slate-500 pb-2 mb-4">
+                        <h3 class="text-xl font-bold text-slate-100">18/10 - Sábado</h3>
+                        <p class="text-sm text-slate-400 font-semibold">DESCANSO TOTAL</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center h-full text-center text-slate-400">
+                        <svg class="h-16 w-16 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                        <p class="font-semibold text-slate-300">Confie no processo. <br>A mente precisa executar.</p>
+                    </div>
+                </div>
+                <!-- Domingo, 19/10 -->
+                <div class="task-card bg-red-500/20 border border-red-500/50 rounded-lg p-5 flex items-center justify-center text-center shadow-lg shadow-red-500/10">
+                    <div>
+                        <h3 class="text-2xl font-bold text-red-300">19/10 - Domingo</h3>
+                        <p class="text-xl font-semibold text-red-400 mt-2">DIA DA PROVA 2</p>
+                        <svg class="h-16 w-16 mx-auto mt-4 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 00-1.071 1.072L12.722 4.2l-1.06-1.061a.75.75 0 00-1.06 1.061l1.06 1.06-1.06 1.06a.75.75 0 101.06 1.06l1.06-1.06 1.06 1.06a.75.75 0 101.06-1.06l-1.06-1.06 1.06-1.06a.75.75 0 00-1.06-1.061l-1.06 1.06-1.83-1.831zM16.5 5.25a.75.75 0 000 1.5h3.375a.75.75 0 000-1.5H16.5z" clip-rule="evenodd" />
+                            <path d="M6.75 7.5A.75.75 0 006 8.25v9a.75.75 0 00.75.75h9a.75.75 0 00.75-.75v-9A.75.75 0 0015.75 7.5h-9z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center p-4 mt-8 text-sm text-slate-500">
+        <p>Feito com 🧠 para um futuro Calouro PUC-Rio. Boa sorte!</p>
+    </footer>
+
+</body>
+</html>
